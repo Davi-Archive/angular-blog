@@ -1,9 +1,11 @@
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
+    <h5 class="card-title">{{ title }}</h5>
     <p class="card-text">
-      With supporting text below as a natural lead-in to additional content.
+      {{ text }}
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div (click)="goToPostWithId(id)" class="btn btn-primary">
+      {{buttonText}}
+    </div>
   </div>
 </div>

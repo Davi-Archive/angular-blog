@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-small',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardSmallComponent implements OnInit {
 
-  constructor() { }
+  @Input() public title: string = 'Título';
+  @Input() public text: string = 'Texto';
+  @Input() public buttonText: string = 'Botão';
+  @Input() public id: number = 0;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public goToPostWithId(id: number) {
+    console.log(id)
+    this.router.navigateByUrl(`/posts/${id}`)
   }
 
 }
