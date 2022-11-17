@@ -2,9 +2,21 @@
   <app-navbar></app-navbar>
   <app-header></app-header>
   <div class="internalContent">
-      <app-card-big></app-card-big>
+    <section class="cardContent">
+      <app-card-big
+        *ngFor="let card of mockupApiCards; let index = index"
+        [id]="index"
+        [title]="card.title"
+        [text]="card.text"
+        [buttonText]="card.buttonText"
+      ></app-card-big>
+    </section>
+
+    <app-menu-right></app-menu-right>
+
+    <section class="smallCardContainer">
       <app-card-small></app-card-small>
-      <app-menu-right></app-menu-right>
+    </section>
   </div>
   <app-footer></app-footer>
 </div>

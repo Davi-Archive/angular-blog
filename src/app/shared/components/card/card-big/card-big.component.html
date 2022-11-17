@@ -1,1 +1,8 @@
-<p>card-big works!</p>
+<article class="card">
+  <img [src]="getImageSource()" class="card-img-top" alt="{{title}}" />
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ text }}</p>
+    <div (click)="readModeAboutPost(id)" class="btn btn-primary">{{ buttonText }}</div>
+  </div>
+</article>

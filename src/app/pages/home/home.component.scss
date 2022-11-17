@@ -1,0 +1,28 @@
+.internalLayout {
+  .internalContent {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: auto 1fr;
+    app-menu-right {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1rem;
+    }
+    .cardContent {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .smallCardContainer {
+      grid-column: -1 / 1;
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+      app-card-small {
+        flex: 1;
+        margin: 0.3rem;
+      }
+    }
+  }
+}
