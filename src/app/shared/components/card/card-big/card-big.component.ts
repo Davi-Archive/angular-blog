@@ -29,7 +29,8 @@ export class CardBigComponent implements OnInit {
   }
 
   public readModeAboutPost(id: number): void {
-    this.router.navigateByUrl(`posts/${id}`)
+    console.log(id)
+    //this.router.navigateByUrl(`posts/${id}`)
   }
 
 }

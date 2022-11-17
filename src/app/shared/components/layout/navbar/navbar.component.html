@@ -2,7 +2,7 @@
   <div class="container-fluid">
       <img class="logo" src="assets/images/logo.webp" alt="Julius Logo" />
     <button
-      (click)="colapseOrShowNavbar()"
+      (click)="collapseOrShowNavbar()"
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -14,8 +14,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      [ngClass]="colapseOrShowNavbar()"
-      class="navbar-collapse"
+      [ngClass]="['navbar-collapse', navbarColapseClass]"
       id="navbarText"
     >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">

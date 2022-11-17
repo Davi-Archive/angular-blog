@@ -20,7 +20,7 @@ export class CardSmallComponent implements OnInit {
 
   public goToPostWithId(id: number) {
     console.log(id)
-    this.router.navigateByUrl(`/posts/${id}`)
+    //this.router.navigateByUrl(`/posts/${id}`)
   }
 
 }

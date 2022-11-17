@@ -7,20 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public isTheNavbarCollapsed: boolean = false;
+  public isTheNavbarOpen: boolean = false;
+  public navbarColapseClass: string = 'collapse';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public colapseOrShowNavbar(): string {
-    if (this.isTheNavbarCollapsed) {
-      this.isTheNavbarCollapsed = false;
-      return '';
-    }
-    this.isTheNavbarCollapsed = true;
-    return 'collapse'
 
+
+  public collapseOrShowNavbar(): void {
+    if (this.isTheNavbarOpen) {
+      this.isTheNavbarOpen = false;
+      this.navbarColapseClass = 'collapse'
+    }
+    else {
+      this.isTheNavbarOpen=true;
+      this.navbarColapseClass = ''
+    }
   }
 
 }
