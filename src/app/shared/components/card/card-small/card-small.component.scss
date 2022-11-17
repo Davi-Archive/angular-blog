@@ -1,4 +1,20 @@
 .card {
-    min-width: 200px;
-    max-width: 20%;
+  min-width: 200px;
+  max-width: 20%;
+
+  .card-body {
+    .card-title {
+      font-family: var(--fontBold);
+    }
+
+    .card-text {
+      font-family: var(--fontLight);
+      font-size: 12px;
+      text-align: justify;
+    }
+
+    .btn {
+      font-size: 10px;
+    }
+  }
 }

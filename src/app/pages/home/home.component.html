@@ -16,7 +16,13 @@
     </div>
 
     <section class="desktop smallCardContainer">
-      <app-card-small></app-card-small>
+      <app-card-small
+        *ngFor="let smallPost of smallPostApiMockup; let index = index"
+        [title]="smallPost.title"
+        [text]="smallPost.text"
+        [buttonText]="smallPost.buttonText"
+        [id]="index"
+      ></app-card-small>
     </section>
   </div>
   <hr class="horizontalLine" />

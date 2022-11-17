@@ -10,7 +10,6 @@
 
   --primaryColor1: #373760;
   --primaryColor2: #f3f6fc;
-
 }
 
 $breakpointDesktop: 992px;
@@ -21,10 +20,16 @@ $breakpointDesktop: 992px;
 }
 
 body {
-  max-width: 1400px;
-  margin: auto;
-  border: 0.5px solid gray;
-  border-radius: 0px;
+  width: 100%;
+  display: block;
+  @media screen and (min-width: $breakpointDesktop) {
+    max-width: 1300px;
+    margin: auto;
+    border: 0.5px solid gray;
+    border-radius: 0px;
+    overflow-x: hidden;
+
+  }
 }
 .horizontalLine {
   width: 100%;

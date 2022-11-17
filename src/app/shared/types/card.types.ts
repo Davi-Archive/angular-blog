@@ -4,3 +4,9 @@ export type ICard = {
     buttonText: string;
     imgSrc:string;
 }
+
+export type ISmallCard = {
+    title: string;
+    text: string;
+    buttonText: string;
+}

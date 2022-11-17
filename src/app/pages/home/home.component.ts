@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ICard } from 'src/app/shared/types/card.types';
+import { ICard, ISmallCard } from 'src/app/shared/types/card.types';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
       text: 'Economia é o conjunto de atividades desenvolvidas pelos homens visando a produção,' +
         'distribuição e o consumo de bens e serviços necessários à sobrevivência e à qualidade de vida.',
       buttonText: 'Leia Mais',
-      imgSrc:''
+      imgSrc: ''
     },
     {
       title: 'Banco',
@@ -29,6 +29,39 @@ export class HomeComponent implements OnInit {
         'podendo fazê-lo na forma de moedas (pedaços de metal amoedados e cunhados, isto é, marcados por desenhos, letras e números), ',
       buttonText: 'Leia Mais',
       imgSrc: ''
+    }
+  ];
+
+  public smallPostApiMockup: Array<ISmallCard> = [
+    {
+      title: 'Economia',
+      text: 'Economia é o conjunto de atividades desenvolvidas pelos homens visando a produção,',
+      buttonText: 'Leia Mais',
+    },
+    {
+      title: 'Banco',
+      text: 'Banco (do germânico banki, através do latim vulgar) é uma instituição financeira',
+      buttonText: 'Leia Mais',
+    },
+    {
+      title: 'Dinheiro',
+      text: 'O dinheiro é na sua aparência mais imediata o meio usado na troca de bens, ',
+      buttonText: 'Leia Mais',
+    },
+    {
+      title: 'Economia',
+      text: 'Economia é o conjunto de atividades desenvolvidas pelos homens visando a produção,',
+      buttonText: 'Leia Mais',
+    },
+    {
+      title: 'Banco',
+      text: 'Banco (do germânico banki, através do latim vulgar) é uma instituição financeira',
+      buttonText: 'Leia Mais',
+    },
+    {
+      title: 'Dinheiro',
+      text: 'O dinheiro é na sua aparência mais imediata o meio usado na troca de bens, ',
+      buttonText: 'Leia Mais',
     }
   ];
 
