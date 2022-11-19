@@ -20,11 +20,9 @@ $breakpointDesktop: 992px;
 }
 
 body {
-  width: 100%;
-  display: block;
+  flex:1;
+  background-color: red;
   @media screen and (min-width: $breakpointDesktop) {
-    max-width: 1300px;
-    margin: auto;
     border: 0.5px solid gray;
     border-radius: 0px;
     overflow-x: hidden;
@@ -49,3 +47,10 @@ body {
     display: none;
   }
 }
+
+html{
+  width:100%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

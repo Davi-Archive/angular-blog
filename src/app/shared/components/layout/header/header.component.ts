@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public images: string[] = ["assets/images/julius_mob.jpg", "assets/images/julius_mob.jpg", "assets/images/julius_mob.jpg"]
+
   constructor() { }
 
   ngOnInit(): void {

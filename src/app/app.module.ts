@@ -7,6 +7,7 @@ import { HomeModule } from './pages/home/home.module';
 import { LayoutModule } from './shared/components/layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     HomeModule,
     LayoutModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,21 +14,21 @@ export class HomeComponent implements OnInit {
       text: 'Economia é o conjunto de atividades desenvolvidas pelos homens visando a produção,' +
         'distribuição e o consumo de bens e serviços necessários à sobrevivência e à qualidade de vida.',
       buttonText: 'Leia Mais',
-      imgSrc: ''
+      imgSrc: 'assets/images/post1.webp'
     },
     {
       title: 'Banco',
       text: 'Banco (do germânico banki, através do latim vulgar) é uma instituição financeira' +
         'intermediária entre agentes superavitários e agentes deficitários.',
       buttonText: 'Leia Mais',
-      imgSrc: ''
+      imgSrc: 'assets/images/post2.webp'
     },
     {
       title: 'Dinheiro',
       text: 'O dinheiro é na sua aparência mais imediata o meio usado na troca de bens, ' +
         'podendo fazê-lo na forma de moedas (pedaços de metal amoedados e cunhados, isto é, marcados por desenhos, letras e números), ',
       buttonText: 'Leia Mais',
-      imgSrc: ''
+      imgSrc: 'assets/images/dinheiro.jpg'
     }
   ];
 
