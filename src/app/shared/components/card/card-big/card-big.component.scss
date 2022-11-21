@@ -3,6 +3,11 @@
   margin: 1rem 0.5rem;
   height: 500px;
 
+  .card-img-top{
+    min-height: 150px;
+    object-fit: fill;
+    flex: 1;
+  }
   .cardBody{
     .cardText{
         display: flex;
