@@ -8,10 +8,14 @@
     object-fit: fill;
     flex: 1;
   }
-  .cardBody{
-    .cardText{
+  .card-body{
+    .card-text{
         display: flex;
         flex:1;
+    }
+    .btn-primary{
+      position: absolute;
+      bottom: 10px;
     }
   }
 }
