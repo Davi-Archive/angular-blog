@@ -29,6 +29,13 @@ export class HomeComponent implements OnInit {
         'podendo fazê-lo na forma de moedas (pedaços de metal amoedados e cunhados, isto é, marcados por desenhos, letras e números), ',
       buttonText: 'Leia Mais',
       imgSrc: 'assets/images/dinheiro.jpg'
+    },
+    {
+      title: 'Dinheiro',
+      text: 'O dinheiro é na sua aparência mais imediata o meio usado na troca de bens, ' +
+        'podendo fazê-lo na forma de moedas (pedaços de metal amoedados e cunhados, isto é, marcados por desenhos, letras e números), ',
+      buttonText: 'Leia Mais',
+      imgSrc: 'assets/images/dinheiro.jpg'
     }
   ];
 
